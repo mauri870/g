@@ -4,7 +4,7 @@
 
 // Macros copied from the runtime
 #define	get_tls(r)	MOVQ TLS, r // TLS register, on some architectures it holds the current goroutine pointer
-#define	g(r)	0(r)(TLS*1) // get the g structure
+#define	g(r)	0(r)(TLS*1) // get the g pointer
 
 
 // getg returns the current goroutine pointer
